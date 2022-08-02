@@ -22,7 +22,7 @@ namespace AutoTest
         public void TestLogin_SuccessFullyLogin()
         {
             var login = new LoginPage(driver);
-            login.Login("usernou@yahoo.com", "123456");
+            login.Login("george@yahoo.com", "abcd");
             var home = new HomePage(driver);
             var actualResults = home.GetWelcomeMessage();
             Assert.AreEqual("Profile", actualResults);
